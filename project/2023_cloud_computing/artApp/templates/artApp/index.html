@@ -1,0 +1,554 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>ArtPark</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/tooplate-waso-strategy.css' %}" rel="stylesheet">
+    </head>
+    
+    <body id="section_1">
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+
+                <a href="#" class="navbar-brand">ArtPark</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1"><small class="small-title"><strong class="text-primary">01</strong></small> Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2"><small class="small-title"><strong class="text-primary">02</strong></small> 전시회</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3"><small class="small-title"><strong class="text-primary">03</strong></small> 인기 작품</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4"><small class="small-title"><strong class="text-primary">04</strong></small> 작가 소개</a>
+                        </li>
+                    </ul>
+                <div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- 전시회 홍보 section -->
+            <section class="hero">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+
+                        <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <h1><span class="text-secondary">바라바빠처럼 유쾌하게!</span><br>홍원표 2023 개인전</h1>
+
+                                            <div class="d-flex align-items-center mt-4">
+                                                <a class="custom-btn btn custom-link" href="exhibition3">전시회로 이동</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-image-wrap">
+                                        <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/slide/SliderPic01.jpg" class="img-fluid carousel-image" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <h1> <span class="text-secondary">반영: REFLECTION </span><br>유근택 개인전</h1>
+
+                                            <div class="d-flex align-items-center mt-4">
+                                                <a class="custom-btn btn custom-link" href="exhibition2">전시회로 이동</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="carousel-image-wrap">
+                                        <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/slide/testSliderPic02.png" class="img-fluid carousel-image" alt="">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 전시회 section -->
+            <section class="projects section-padding pb-0" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+                            <h2>ArtPark의 전시회</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="projects-thumb projects-thumb-small">
+                                <a href="exhibition1">
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/projects/exhibition01.jpg" class="img-fluid projects-image" alt="" width="773" height="1093">
+                                    
+                                    <div class="projects-info">
+                                        <div class="projects-title-wrap">
+                                            <small class="projects-small-title-white">2023 홍세연 개인전</small>
+
+                                            <h3 class="projects-title">평화와 공존, 우리가 꿈꾸는 파라다이스 </h3>
+                                        </div>
+
+                                        <div class="projects-btn-wrap mt-4">
+                                            <span class="custom-btn btn">
+                                                <i class="bi-arrow-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="projects-thumb projects-thumb-small">
+                                <a href="exhibition2">
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/projects/exhibition02.jpg" class="img-fluid projects-image" alt="">
+                                    
+                                    <div class="projects-info">
+                                        <div class="projects-title-wrap">
+                                            <small class="projects-small-title-white">유근택 개인전</small>
+
+                                            <h3 class="projects-title">반영: Reflection</h3>
+                                        </div>
+
+                                        <div class="projects-btn-wrap mt-4">
+                                            <span class="custom-btn btn" href="project-detail.html">
+                                                <i class="bi-arrow-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="projects-thumb projects-thumb-small">
+                                <a href="exhibition3">
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/projects/exhibition03.jpg" class="img-fluid projects-image" alt="">
+                                    
+                                    <div class="projects-info">
+                                        <div class="projects-title-wrap">
+                                            <small class="projects-small-title-white">홍원표 2023 개인전</small>
+
+                                            <h3 class="projects-title">바라바빠처럼 유쾌하게! 展(전)</h3>
+                                        </div>
+
+                                        <div class="projects-btn-wrap mt-4">
+                                            <span class="custom-btn btn" href="project-detail.html">
+                                                <i class="bi-arrow-right"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 인기작품 section -->
+            <section class="about section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+                            <h2>인기 작품</h2>
+                        </div>
+
+                        <div class="slidebox">
+                            <input type="radio" name="slide" id="slide01" checked>
+                            <input type="radio" name="slide" id="slide02">
+                            <input type="radio" name="slide" id="slide03">
+                            <ul class="slidelist">
+                                <!-- slide 01 section -->
+                                <div class="slideitem">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                                            <div class="about-image-wrap h-100">
+                                                <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/hong_pic2.jpg" class="img-fluid about-image" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-12 d-flex flex-column">
+                                            <div class="about-thumb bg-white shadow-lg">
+                                                <div class="about-info">
+                                                    <h5 class="mb-3">The Forest</h5>
+                                                    <!-- 작품내용 -->
+                                                    <p >표범이 등장하는 작품 중에는 밀림 속 붉은 표범 무리가 배경으로 있는 것이 있다.
+                                                        작가는 '후면의 표범 무리는 야생의 표범이고, 홀로 전면에 있는 표범은 동물원의 표범'이라고 설명한다. 
+                                                        <br>그러면서 "'전면의 표범이 나를 바라보고 있다'는 의미는 '나는 밀림을 그리워하는 동물원의 표범이 되어 나를 바라보고 있다' 고 해석되어 진다는 것이다."라고 말한다. 
+                                                        시선의 주체와 객체, 나와 표범의 동일화가 이뤄진다. 늘 허기진 현대인의 결핍, 쉽게 끊어지는 관계성을 표범을 통해 상징한다. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                
+                                            <div class="row h-100">
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="about-thumb d-flex flex-column justify-content-center bg-primary mb-lg-0 h-100">
+                                                        
+                                                        <div class="about-info">
+                                                            <h6 class="text-white mb-4">작가</h6>
+                                                            <h5 class="text-white mb-4">홍세연 작가</h5>
+                
+                                                            <a class="custom-btn btn custom-bg-secondary" href="artist-page-hong.html">작가 페이지로 이동</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="about-thumb d-flex flex-column justify-content-center bg-secondary mb-lg-0 h-100">
+                                                        
+                                                        <div class="about-info">
+                                                            <h6 class="text-white mb-4">작품의 전시회</h6>
+                                                            <h5 class="text-white mb-4">Paradise Regained</h5>
+                
+                                                            <a class="custom-btn-2 btn" href="exhibition1">전시회로 이동</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+
+                                <!-- slide 02 section -->
+                                <div class="slideitem">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                                            <div class="about-image-wrap h-100">
+                                                <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/pyo_pic1.jpg" class="img-fluid about-image" alt="">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-6 col-12 d-flex flex-column">
+                                            <div class="about-thumb bg-white shadow-lg">
+                                                
+                                                <div class="about-info">
+                                                    <h5 class="mb-3">hangaroun rabbit</h5>
+                                                    <!-- 작품 내용 -->
+                                                    <p> 토끼와 함께하는 모험을 중심으로 한 판타지 이야기입니다.
+                                                        "Hangaroun Rabbit"은 주인공인 토끼와 그의 친구들이 다양한 모험을 겪으며 성장하는 이야기를 그립니다. 
+                                                        이 작품은 재미있는 이야기와 흥미로운 설정, 다양한 캐릭터들로 구성되어 있어 관람객들에게 큰 인기를 끌었습니다.<br>
+                                                        "Hangaroun Rabbit"은 판타지와 모험을 좋아하는 관람객들에게 추천할 만한 작품입니다.
+                                                        이 작품을 통해 토끼와 친구들의 모험을 따라가며 새로운 세계에 빠져들어보세요.
+                                                    </p>
+                                                </div>
+                                            </div>
+                
+                                            <div class="row ">
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="about-thumb d-flex flex-column justify-content-center bg-primary mb-lg-0 h-100">
+                                                        
+                                                        <div class="about-info">
+                                                            <h6 class="text-white mb-4">작가</h6>
+                                                            <h5 class="text-white mb-4">홍원표 작가</h5>
+                
+                                                            <a class="custom-btn btn custom-bg-secondary" href="artist-page-pyo.html">작가 페이지로 이동</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="about-thumb d-flex flex-column justify-content-center bg-secondary mb-lg-0 h-100">
+                                                        
+                                                        <div class="about-info">
+                                                            <h6 class="text-white mb-4">작품의 전시회</h6>
+                                                            <h6 class="text-white mb-4">바라바빠처럼 유쾌하게!</h6>
+                
+                                                            <a class="custom-btn-2 btn" href="exhibition3">전시회로 이동</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- slide 03 section -->
+                                <div class="slideitem">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                                            <div class="about-image-wrap h-100">
+                                                <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_yoo/artwork2.jpg" class="img-fluid about-image" alt="">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-6 col-12 d-flex flex-column">
+                                            <div class="about-thumb bg-white shadow-lg">
+                                                
+                                                <div class="about-info">
+                                                    <h5 class="mb-3">분수</h5>
+                                                    <!-- 작품 내용 -->
+                                                    <p> 
+                                                        물방울이 물방울을 밀고 서 있는 분수는 한줄기의 물이 위로 쌓이다가 정점에 다다르면 다시 해체되어 물방울로 떨어지고, 
+                                                        다시 바닥으로부터 물줄기가 솟아오르는 움직임이 끝없이 반복된다.
+                                                        <br>이런 순환운동은 생명의 윤회사상이나 존재론과 맞닿아 있다. 
+                                                        <br>해체되거나 소멸하더라도 올곧게 서 있는 분수의 수많은 물줄기를 추상적이면서도 구상적인 형태로 작품에 옮김으로써 탄생과 소멸의 아름다움을 성찰한다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                
+                                            <div class="row ">
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="about-thumb d-flex flex-column justify-content-center bg-primary mb-lg-0 h-100">
+                                                        
+                                                        <div class="about-info">
+                                                            <h6 class="text-white mb-4">작가</h6>
+                                                            <h5 class="text-white mb-4">유근택 작가</h5>
+                
+                                                            <a class="custom-btn btn custom-bg-secondary" href="artist-page-yoo.html">작가 페이지로 이동</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="about-thumb d-flex flex-column justify-content-center bg-secondary mb-lg-0 h-100">
+                                                        
+                                                        <div class="about-info">
+                                                            <h6 class="text-white mb-4">작품의 전시회</h6>
+                                                            <h6 class="text-white mb-4">반영: REFLECTION</h6>
+                
+                                                            <a class="custom-btn-2 btn" href="exhibition2">전시회로 이동</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </ul>
+                            <div class="slide-control">
+                                <div class="control01">
+                                    <label for="slide03" class="prev"></label>
+                                    <label for="slide02" class="next"></label>
+                                </div>
+                                <div class="control02">
+                                    <label for="slide01" class="prev"></label>
+                                    <label for="slide03" class="next"></label>
+                                </div>
+                                <div class="control03">
+                                    <label for="slide02" class="prev"></label>
+                                    <label for="slide01" class="next"></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- 작가소개 section -->
+            <section class="services section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+                            <h2>ArtPark의 작가를 소개합니다</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <nav>
+                                <div class="nav nav-tabs flex-column align-items-baseline" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true">
+                                        <h3>홍원표</h3>
+
+                                        <span>즐거움을 찾아다니는 ‘유쾌주의 아티스트’이자, 순수미술, 상업미술, 미디어아트, 라이브 드로잉 퍼포먼스를 하는 예술가입니다.</span>
+                                    </button>
+
+                                    <button class="nav-link" id="nav-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-strategy" type="button" role="tab" aria-controls="nav-strategy" aria-selected="false">
+                                        <h3>홍세연</h3>
+                                        
+                                        <span>회화라는 장르를 작업해오며, 작품의 사회적 기능에 대해서도 이상적 지향점을 모색하고 있습니다. </span>
+                                    </button>
+
+                                    <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">
+                                        <h3>유근택</h3>
+                                        
+                                        <span>동양화의 전통적 개념과 방법론을 동시대의 언어로 전환하는 독자적인 작품 세계를 구축하였습니다.</span>
+                                    </button>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-business" role="tabpanel" aria-labelledby="nav-intro-tab">
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/services/artist3.jpg" class="img-fluid" alt="">
+                                    
+                                    <h5 class="mt-4 mb-2">홍원표, Artist</h5>
+
+                                    <p>즐거움을 찾아다니는 ‘유쾌주의 아티스트’이자, 순수미술, 상업미술, 미디어아트, 라이브 드로잉 퍼포먼스를 하는 예술가입니다.</p>
+
+                                    <p>작가의 전시회</p>
+                                    <ul>
+                                        <li>2023 개인전 바라바빠처럼 유쾌하게! 展(전)</li>
+
+                                        <li>2020 개인전 Trick or Trip! with 바라바빠</li>
+
+                                        <li>2018 개인전 Look At Me-부산을 바라보다</li>
+                                    </ul>
+                                    <a class="custom-btn-2 btn" href="artist-page-pyo.html">작가 페이지로 이동</a>
+                                </div>
+
+                                <div class="tab-pane fade show" id="nav-strategy" role="tabpanel" aria-labelledby="nav-strategy-tab">
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/services/painter2.jpg" class="img-fluid" alt="">
+
+                                    <h5 class="mt-4 mb-2">홍세연, Artist</h5>
+                                    
+                                    <p>회화라는 장르를 작업해오며, 작품의 사회적 기능에 대해서도 이상적 지향점을 모색하고 있습니다.</p>
+
+                                    <p>작가의 전시회</p>
+                                    <ul>
+                                        <li>Paradise Regained - 평화와 공존, 우리가 꿈구는 파라다이스</li>
+
+                                        <li>The Healing - 펜데믹 시대의 새로운 키워드 '치유(Healing)의 숲'</li>
+
+                                        <li>The Forest</li>
+                                    </ul>
+                                    <a class="custom-btn-2 btn" href="artist-page-hong.html">작가 페이지로 이동</a>
+                                </div>
+
+                                <div class="tab-pane fade show" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/services/painter3.jpg" class="img-fluid" alt="">
+
+                                    <h5 class="mt-4 mb-2">유근택, Artist</h5>
+
+                                    <p>동양화의 전통적 개념과 방법론을 동시대의 언어로 전환하는 독자적인 작품 세계를 구축하였습니다.</p>
+
+                                    <p>작가의 전시회</p>
+                                    <ul>
+                                        <li>반영: Reflection</li>
+
+                                        <li>대화: Dialogue</li>
+
+                                        <li>어떤 산책</li>
+                                    </ul>
+                                    <a class="custom-btn-2 btn" href="artist-page-yoo.html">작가 페이지로 이동</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- contact section -->
+            <section class="contact" id="section_5">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a1b2ce" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    
+                    <div class="contact-container-wrap">
+                        <div class="container">
+                            <div class="row">
+    
+                                <form class="custom-form contact-form" action="{% url 'send_email' %}" method="post" role="form" name="sendEmailForm" method="post">
+                                    <!--<small class="small-title">Contact <strong class="text-white">05/05</strong></small>-->
+                                    {% csrf_token %}
+                                    <h2 class="mb-5">작가만의 공간을 원한다면, Contact to us!</h2>
+    
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">                                    
+                                            <input type="text" name="title" id="title" class="form-control" placeholder="Title" required="">
+                                        </div>
+    
+                                        <div class="col-lg-6 col-md-6 col-12">         
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your E-mail" required="">
+                                        </div>
+    
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="6" id="message" name="message" placeholder="Message"></textarea>
+    
+                                            <button type="submit" class="form-control" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                                        </div>
+    
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+    
+            <script>
+                $(document).ready(function() {
+                    $('#sendEmailForm').submit(function(event) {
+                        event.preventDefault();
+    
+                        $('title').val('');
+                        $('email').val('');
+                        $('message').val('');
+                        type: 'POST',
+                            url: '/send_email/',  
+                            data: $(this).serialize(),
+                            success: function(response) {
+                                alert('이메일 전송에 성공했습니다!');
+                            },
+                            error: function(jqXHR, textStatus, errorThrown) {
+                                alert('이메일 전송 중 오류가 발생했습니다.');
+                            }
+    
+                        return false;
+                    });
+                });    
+            </script>    
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{%static 'javascript/jquery.min.js' %}"></script>
+        <script src="{%static 'javascript/bootstrap.min.js' %}"></script>
+        <script src="{%static 'javascript/jquery.sticky.js' %}"></script>
+        <script src="{%static 'javascript/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{%static 'javascript/magnific-popup-options.js' %}"></script>
+        <script src="{%static 'javascript/click-scroll.js' %}"></script>
+        <script src="{%static 'javascript/custom.js' %}"></script>
+
+    </body>
+</html>

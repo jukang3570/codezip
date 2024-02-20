@@ -1,0 +1,215 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>ArtPark - 유근택 Artist Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/tooplate-waso-strategy.css' %}" rel="stylesheet">
+    </head>
+    
+    <body class="projects-detail-page" id="section_1">
+        <!-- 상단 웹사이트 이름과 메뉴 버튼들 -->
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+
+                <a href="home" class="navbar-brand">ArtPark</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <!-- 작가 이름 (그림 바꾸기) -->
+            <section class="hero selection-artist-page-yoo section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 text-center mx-auto">
+                            <div class="section-hero-text">
+                                <h1 class="text-white">유근택</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="wrapper">
+                <div class="container">
+                    <div class="row gtr-200">
+                        
+                        <!-- 왼쪽 사이드 바 -->
+                        <div class="col-lg-4" id="sidebar">
+                            <section>
+                                <div class="row gtr-50">
+                                    <header>
+                                        <h5><a href="#">현재 진행중인 전시회</a></h5>
+                                    </header>
+                                    <!-- <a class="image fit"><img src="images/artist_page_hong/current.jpg" alt=""/></a> -->
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_yoo/current_exhibition.png" alt=""/>
+                                    <div class="col-9">
+                                        <h6><br>반영: REFLECTION</h6>
+                                        <b-text>
+                                            자연과 인간, 삶과 사물의 현상과 본질을 서정적이며 날카로운 시선으로 나타낸 전시회
+                                        </b-text>
+                                    </div>
+                                    
+                                </div>
+                                <footer style="margin-bottom: 20px;">
+                                    <a href="exhibition2" class="art_button">전시회로 이동</a>
+                                </footer>
+                                
+                            </section>
+
+                            <hr />
+
+                            <section>
+                                <header>
+                                    <h5><a href="#">학력</a></h5>
+                                </header>
+                                <b-text><p>
+                                    1988 홍익대학교 미술대학 동양화과 졸업<br>
+                                    1997 홍익대학교 대학원 졸업<br>
+                                    현재 성신여자대학교 교수
+                                </p></b-text>
+
+                                <hr/>
+
+                                <header>
+                                    <h5><a href="#" >사이트</a></h5>
+                                </header>
+                                <h5><p>
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/icon/instagram_ic.png" width="40" height="40"/> <a href="https://www.instagram.com/yoogeuntaek/"> @yoogeuntaek</a>
+                                </p></h5>
+                                <h5><p>
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/icon/site_ic.png" width="40" height="40"/> <a href="http://www.geuntaek.com/"> 유근택 공식홈페이지</a>
+                                </p></h5>
+                            </section>
+                        </div>
+
+                        <!-- 오른쪽 큰 화면 -->
+                        <div class="col-lg-8 col-12-mobile imp-mobile" id="content">
+                            <article id="main">
+                                <header>
+                                    <h2><a href="#">유근택 Yoo-Geun-Taek</a></h2>
+                                    <p>
+                                        동양화의 전통적 개념과 방법론을 동시대의 언어로 전환하는 독자적인 작품 세계를 구축하였습니다.
+                                    </p>
+                                </header>
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/services/painter3.jpg" alt="" /></a>
+                                <p>
+                                    안녕하세요, 유근택이라 합니다. 저는 동양화 작가로서 예술의 풍요로운 전통을 기반으로 현대적인 시각을 통해 새로운 표현을 모색하고 있습니다. 
+                                    저만의 작품세계에서는 전통적인 미술양식의 정수를 유지하면서도 현대적인 측면을 강조하여, 동양화의 아름다움을 현대 사회에 고스란히 전달하고자 노력하고 있습니다.
+                                    <br>농밀한 선과 독특한 색채를 통해 나타나는 저의 작품은 자연의 아름다움과 정신적인 감수성을 담아내려는 노력의 결과물입니다. 
+                                    저의 그림 속에 담긴 이야기는 동양 예술의 전통과 현대적 감각의 유기적 결합을 통해 새로운 해석과 해방을 제안하고 있습니다. 
+                                    <br>작품을 통해 감상자들이 고요하면서도 감각적인 여정을 떠나며, 동양화의 매력과 심오함을 새롭게 발견할 수 있기를 기대합니다.
+                                </p>
+                                <section>
+                                    <header>
+                                        <h4>2022 전시 개인전 - 대화: Dialogue</h4>
+                                    </header>
+                                    <b-text>
+                                        2022 개인전 대화는 저만의 예술적 세계를 탐험하고 표현한 특별한 순간을 담은 소중한 경험이었습니다. 
+                                        이 대화 전시회에서 저는 작품의 감정과 미학적 선택에 대해 관람객들과 함께 공유하며, 작품의 배경과 의미에 대한 질문에 성실히 응답했습니다. 
+                                        동양화의 전통과 현대적 감성의 조화를 강조한 작품들은 관람객들에게 예술적 감동과 이해의 순간을 선사했습니다. 
+                                        이 대화는 작품 속에서 나타난 감정과 예술적 선택에 대한 통찰력을 듣는 기회를 제공했으며, 관람객들과의 소중한 소통을 통해 작품의 깊이 있는 이면을 전하고자 했습니다.
+                                    </b-text>
+                                </section>
+                                <section>
+                                    <header>
+                                        <h4>2017 전시 개인전 - 어떤 산책 </h4>
+                                    </header>
+                                    <b-text>
+                                        '2017 개인전 어떤 산책'은 저만의 예술적 탐험과 동시에 자연의 아름다움과 정취를 담아낸 특별한 전시였습니다. 
+                                        작품들은 동양화의 전통적인 표현 방식을 토대로 현대적 감각을 녹여내어, 산책하는 듯한 고요하면서도 아름다운 순간을 담아내고자 했습니다. 
+                                        각 작품은 자연의 풍경과 동물, 그리고 인간의 존재와의 조화를 통해 자연과의 소통과 균형을 시각적으로 나타냈습니다. 
+                                        관람객들은 작품을 통해 자연과의 조화로운 대화에 참여하고, 작가의 시선으로 산책하는 듯한 정서적인 여행을 떠날 수 있었습니다. 
+                                        이 전시는 나 자신의 예술적 성장과 동시에 자연의 아름다움을 새롭게 발견하는 과정을 나타내었습니다. 
+                                    </b-text>
+                                </section>
+                            </article>
+                        </div>
+
+                        <hr />
+
+                        <!-- 하단 글과 그림들 -->
+                        <div class="row">
+                            <div class="col-lg-10 col-12 text-center mx-auto mb-4">
+                                <h2>작가의 인기 작품 소개</h2>
+                            </div>
+                            <!-- 1번째 -->
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_yoo/artwork1.jpg" alt="" width="90%" height="90%"/></a>
+                                <header>
+                                    <h3><a href="#">창문 - 아침</a></h3>
+                                </header>
+                                <b-text>
+                                    일상을 섬세하게 관찰하고 이를 반복하고 변주해 그림으로써 풍경의 미묘한 변화와 움직임을 드러내었다. 
+                                    <br>창문을 넘어서 무엇이 보이는지 생각하게 만든다. 창문을 통해 밖을 보는지 아니면 사회 속 안을 보면서 나를 돌아보고 성찰하게 만든다.
+                                </b-text>
+                            </article>
+
+                            <!-- 2번째 -->
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_yoo/artwork2.jpg" alt="" width="90%" height="90%"/></a>
+                                <header>
+                                    <h3><a href="#">분수</a></h3>
+                                </header>
+                                <b-text>
+                                    물방울이 물방울을 밀고 서 있는 분수는 한줄기의 물이 위로 쌓이다가 정점에 다다르면 다시 해체되어 물방울로 떨어지고, 다시 바닥으로부터 물줄기가 솟아오르는 움직임이 끝없이 반복된다.
+                                    이런 순환운동은 생명의 윤회사상이나 존재론과 맞닿아 있다. 해체되거나 소멸하더라도 올곧게 서 있는 분수의 수많은 물줄기를 추상적이면서도 구상적인 형태로 작품에 옮김으로써 탄생과 소멸의 아름다움을 성찰한다.
+                                </b-text>
+                            </article>
+
+                            <!-- 3번째 -->
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_yoo/artwork3.jpg" alt="" width="90%" height="90%"/></a>
+                                <header>
+                                    <h3><a href="#">반영</a></h3>
+                                </header>
+                                <b-text>
+                                    물에 젖은 상태의 표면 아래에 숨겨진 풍경이 철솔질을 통해 서서히 '유령'처럼 모습을 드러낼 때,
+                                    현실의 공간과 회화 속 공간의 경계는 허물어지고, 내가 바라보는 풍경과 나의 존재가 교차한다.
+                                </b-text>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{%static 'javascript/jquery.min.js' %}"></script>
+        <script src="{%static 'javascript/bootstrap.min.js' %}"></script>
+        <script src="{%static 'javascript/jquery.sticky.js' %}"></script>
+        <script src="{%static 'javascript/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{%static 'javascript/magnific-popup-options.js' %}"></script>
+        <script src="{%static 'javascript/click-scroll.js' %}"></script>
+        <script src="{%static 'javascript/custom.js' %}"></script>
+
+    </body>
+</html>

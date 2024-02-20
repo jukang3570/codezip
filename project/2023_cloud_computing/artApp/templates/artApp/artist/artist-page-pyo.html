@@ -1,0 +1,223 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>ArtPark - 홍원표 Artist Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/tooplate-waso-strategy.css' %}" rel="stylesheet">
+    </head>
+    
+    <body class="projects-detail-page" id="section_1">
+        <!-- 상단 웹사이트 이름과 메뉴 버튼들 -->
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+
+                <a href='home' class="navbar-brand">ArtPark</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <!-- 작가 이름 (그림 바꾸기) -->
+            <section class="hero selection-artist-page-pyo section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 text-center mx-auto">
+                            <div class="section-hero-text">
+                                <h1 class="text-white">홍원표</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="wrapper">
+                <div class="container">
+                    <div class="row gtr-200">
+                        
+                        <!-- 왼쪽 사이드 바 -->
+                        <div class="col-lg-4" id="sidebar">
+                            <section>
+                                <div class="row gtr-50">
+                                    <header>
+                                        <h5><a href="#">현재 진행중인 전시회</a></h5>
+                                    </header>
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/projects/exhibition03.jpg" alt=""/>
+                                    <div class="col-9">
+                                        <h6><br>바라바빠처럼 유쾌하게! 展(전)</h6>
+                                        <b-text>
+                                            유쾌하고 경쾌한 분위기를 통해 관람객들에게 즐거움과 웃음을 선사하는 전시회
+                                        </b-text>
+                                    </div>
+                                    
+                                </div>
+                                <footer style="margin-bottom: 20px;">
+                                    <a href="exhibition3" class="art_button">전시회로 이동</a>
+                                </footer>
+                                
+                            </section>
+
+                            <hr />
+
+                            <section>
+                                <header>
+                                    <h5><a href="#">학력</a></h5>
+                                </header>
+                                <b-text><p>
+                                    2002 단국대학교 동양화과 졸업<br>
+                                    2004 홍익대학교 일반대학원 동양화과 졸업
+                                </p></b-text>
+
+                                <hr/>
+
+                                <header>
+                                    <h5><a href="#" >사이트</a></h5>
+                                </header>
+                                <h5><p>
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/icon/instagram_ic.png" width="40" height="40"/> <a href="https://www.instagram.com/barabapa/"> @barabapa</a> 
+                                </p></h5>
+                                <h5><p>
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/icon/naverBlog_ic.png" width="40" height="40"/> <a href="https://blog.naver.com/shimpyo"> 홍원표 블로그</a>
+                                </p></h5>
+                                <h5><p>
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/icon/youtube_ic.png" width="40" height="40"/> <a href="https://www.youtube.com/channel/UCLnxdFNCIjaUY-pyWBg66PA?view_as=subscriber"> 아몰라홍 툰</a>
+                                </p></h5>
+                                <h5><p>
+                                    <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/icon/site_ic.png" width="40" height="40"/> <a href="http://barabapa.com/"> 홍원표 공식홈페이지</a>
+                                </p></h5>
+                            </section>
+                        </div>
+
+                        <!-- 오른쪽 큰 화면 -->
+                        <div class="col-lg-8 col-12-mobile imp-mobile" id="content">
+                            <article id="main">
+                                <header>
+                                    <h2><a href="#">홍원표  Hong-Won-Pyo</a></h2>
+                                    <p>
+                                        즐거움을 찾아다니는 ‘유쾌주의 아티스트’이자, 순수미술, 상업미술, 미디어아트, 라이브 드로잉 퍼포먼스를 하는 예술가입니다.
+                                    </p>
+                                </header>
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/services/artist3.jpg" alt="" /></a>
+                                <p>
+                                    안녕하세요, 홍원표입니다. <br>저는 다양한 감정과 상상력을 담아낸 미술 작가로, 작품을 통해 삶의 아름다움과 유머를 전하고자 노력하고 있습니다. 
+                                    동물이나 일상의 소소한 순간을 통해 관람자들에게 긍정적인 감정과 재미를 전하고자 하며, 작업 과정에서는 색다른 시각과 표현 방법에 도전합니다. 
+                                    작품들에 유쾌하고 따뜻한 에너지를 담아내어 관람객들에게 즐거움과 위로를 전하고자 합니다. 
+                                    예술을 통해 소통하며, 긍정적인 감정을 제안하는 것이 저의 작가활동의 핵심이며, 이를 통해 사람들에게 밝고 즐거운 영감을 전하고자 노력하고 있습니다.
+                                </p>
+                                <section>
+                                    <header>
+                                        <h4>2020 전시 개인전: Trick or Trip! with 바라바빠</h4>
+                                    </header>
+                                    <b-text>
+                                        '2020년 전시 개인전: Trick or Trip! with 바라바빠'는 상상으로 전 세계를 누비고 미지의 공간을 여행해볼 수 있는 특별한 전시입니다. 
+                                        작품들은 독특하고 환상적인 시각으로 현실을 해석하며, 바라바빠와 함께하는 신비로운 여행을 제안합니다. 
+                                        전시는 유머와 트릭이 어우러진 공간에서 관람객들에게 놀라움과 즐거움을 선사합니다. 
+                                        작품 속에서 바라바빠와 함께하는 여행은 관람자들에게 일상을 벗어나 새로운 차원으로 인도하며, 예술적 상상력을 통해 색다른 경험을 선사합니다. 
+                                        이 전시는 예술과 상상력이 만나 환상적인 세계를 연다고 생각합니다. 
+                                    </b-text>
+                                </section>
+                                <section>
+                                    <header>
+                                        <h4>2018 전시 개인전: Look at me-부산을 바라보다</h4>
+                                    </header>
+                                    <b-text>
+                                        저의 '2018년 전시 개인전: Look At Me - 부산을 바라보다'는 저의 시선으로 담아낸 도시 부산에 대한 특별한 이야기를 담은 전시입니다. 
+                                        작품들은 부산의 아름다움과 독특한 분위기를 강조하여, 나만의 시각으로 도시를 표현하고자 했습니다. 
+                                        전시는 부산의 다양한 풍경과 문화적 특징을 담아내어 관람자들에게 특별한 감동을 전하며, 도시의 아름다움과 다양성을 재해석합니다. 
+                                        작품 속에서 부산의 다양한 모습을 바라보는 나만의 시선을 통해 도시의 매력적인 측면을 재조명하고, 관람자들에게 도시의 아름다움을 새롭게 발견하는 시간을 선사했습니다.
+                                    </b-text>
+                                </section>
+                            </article>
+                        </div>
+
+                        <hr />
+
+                        <!-- 하단 글과 그림들 -->
+                        <div class="row">
+                            <div class="col-lg-10 col-12 text-center mx-auto mb-4">
+                                <h2>작가의 인기 작품 소개</h2>
+                            </div>
+                            <!-- 1번째 -->
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_pyo/artwork1.jpg" alt="" width="90%" height="90%"/></a>
+                                <header>
+                                    <h3><a href="#">감정의 구름</a></h3>
+                                </header>
+                                <b-text>
+                                    나의 감정과 마음의 움직임을 담아내어, 감정의 흐름과 다양성을 시각적으로 표현한 작품입니다. 
+                                    구름은 자연의 변화와 유동성을 상징하며, 작품을 통해 감정의 다채로운 모습을 표현하고자 했습니다. 
+                                    이 작품은 감정의 아름다움과 변화를 통해 관람자들과 소통하며, 감정의 다양성을 통해 공감과 이해를 이끌어냅니다.
+                                </b-text>
+                            </article>
+
+                            <!-- 2번째 -->
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/pyo_pic1.jpg" alt="" width="90%" height="90%"/></a>
+                                <header>
+                                    <h3><a href="#">hangaroun rabbit</a></h3>
+                                </header>
+                                <b-text>
+                                    토끼와 함께하는 모험을 중심으로 한 판타지 이야기입니다.
+                                    주인공인 토끼와 그의 친구들이 다양한 모험을 겪으며 성장하는 이야기를 그립니다.
+                                    "Hangaroun Rabbit"은 판타지와 모험을 좋아하는 관람객들에게 추천할 만한 작품입니다.
+                                    이 작품을 통해 토끼와 친구들의 모험을 따라가며 새로운 세계에 빠져들어보세요.
+                                    
+                                </b-text>
+                            </article>
+
+                            <!-- 3번째 -->
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_pyo/artwork2.jpg" alt="" width="90%" height="90%"/></a>
+                                <header>
+                                    <h3><a href="#">이름 모를 친구 1</a></h3>
+                                </header>
+                                <b-text>
+                                    저의 작품 세계에서 신비로운 존재를 만난 순간을 담아낸 작품입니다. 
+                                    이 작품은 이름조차 알려지지 않은 캐릭터를 통해 관람자들에게 상상 속의 친구와의 만남을 제안하며, 감성적이고 따뜻한 이야기를 전하고자 합니다. 
+                                    미스터리한 분위기와 독특한 캐릭터는 작품을 통해 상호간의 이해와 소통의 중요성을 강조하며, 관람자들에게 공감과 아낌없는 따뜻한 이야기를 전합니다.
+                                </b-text>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{%static 'javascript/jquery.min.js' %}"></script>
+        <script src="{%static 'javascript/bootstrap.min.js' %}"></script>
+        <script src="{%static 'javascript/jquery.sticky.js' %}"></script>
+        <script src="{%static 'javascript/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{%static 'javascript/magnific-popup-options.js' %}"></script>
+        <script src="{%static 'javascript/click-scroll.js' %}"></script>
+        <script src="{%static 'javascript/custom.js' %}"></script>
+
+    </body>
+</html>

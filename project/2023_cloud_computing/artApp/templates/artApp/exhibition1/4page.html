@@ -1,0 +1,131 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>전시회</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/tooplate-waso-strategy.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/soyeon.css' %}" rel="stylesheet">
+
+<!--
+
+Tooplate 2130 Waso Strategy
+
+https://www.tooplate.com/view/2130-waso-strategy
+
+Free Bootstrap 5 HTML Template
+
+-->
+
+    </head>
+    
+    <body class="projects-detail-page" id="section_1">
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+                <!-- 사이드바 제거함 -->
+
+                <a href='../home' class="navbar-brand">ArtPark</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <!-- 사진 부분 -->
+            <section class="projects section-padding">
+                <div class="container">
+                    <button style="background-color:white; border: none; width: 50px; float: left; margin-left: 150px; margin-top: 150px;" onclick="location.href='3page';">
+                        <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/next2.png" alt="" style="width: 100%;">
+                    </button>
+                    <a style="background-color:white; border: none; width: 50px; float: right; margin-right: 150px; margin-top: 150px;"  href="{% url 'index' %}">
+                        <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/next1.png" alt="" style="width: 100%;">
+                    </a>
+                    <div style="display: flex; justify-content: center; height: 500pt;"> 
+                        
+                        <div style="background-color: #F8F8F8; padding:20px; width: 70%; height: 130%; border-radius: 20px;">
+                            <h5 style="text-align: center;">'홍세연' 작가님께 글 남기기</h5>
+                            <form style="text-align: center;" action="{% url 'comment_create1' exhibition=1 %}" method="post">
+                                {% csrf_token %}
+                                <input type="text" name="commentText" style="padding: 7px; width: 80%;"> 
+                                <input type="submit" value="게시" style="padding: 10px; margin-left: 10px;" > 
+                            </form>
+                            <br>
+                            <div style="border: 0.8px solid; height: 85%; padding: 10px; border-radius: 5%;">
+                                <div class="comment" style="width: auto; ">
+                                    {% for comments in comment_form %}
+                                        {% if comments.exhibition == 1 %}
+                                            <div style="padding: 10px; border-bottom: 1px solid gray">
+                                                <p>{{ comments.comment }} 
+                                                    <span style="float:right; color:gray;">{{ comments.date|date:'m월 d일' }}</span>
+                                                </p>
+                                            </div>
+                                        {% endif %}
+                                    {% empty %}
+                                    <div style="padding: 10px; border-bottom: 1px solid gray">
+                                        <p>댓글이 없습니다. 글을 남겨주세요!</p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": '{{csrf_token}}' }
+    });
+
+    function pointSave() {
+        $.ajax({
+            type: 'POST',
+            url: 'like/1/',  // 좋아요 처리하는 뷰의 URL로 수정
+            success: function (response) {
+                // 페이지를 새로고침
+                location.reload();
+                alert('완료');
+            },
+            error: function (error) {
+                console.log('에러:', error);
+            }
+        });
+    }
+</script>
+
+    </body>
+</html>

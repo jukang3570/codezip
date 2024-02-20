@@ -1,0 +1,130 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>전시회</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/tooplate-waso-strategy.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/soyeon.css' %}" rel="stylesheet">
+
+<!--
+
+Tooplate 2130 Waso Strategy
+
+https://www.tooplate.com/view/2130-waso-strategy
+
+Free Bootstrap 5 HTML Template
+
+-->
+
+    </head>
+    
+    <body class="projects-detail-page" id="section_1">
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+                <!-- 사이드바 제거함 -->
+
+                <a href="../home" class="navbar-brand">ArtPark</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <!-- 사진 부분 -->
+            <section class="projects section-padding">
+                <div class="container">
+                    <button style="background-color:white; border: none; width: 50px; float: left; margin-left: 150px; margin-top: 150px;" onclick="location.href='1page';">
+                        <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/next2.png" alt="" style="width: 100%;">
+                    </button>
+                    <button style="background-color:white; border: none; width: 50px; float: right; margin-right: 150px; margin-top: 150px;"  onclick="location.href='3page';">
+                        <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/next1.png" alt="" style="width: 100%;">
+                    </button>
+                    <div style="display: flex; justify-content: center;"> 
+                        <div class="col-lg-6 col-12 mb-5">
+                            <img src="https://yjk-s3-bucket.s3.amazonaws.com/images/artist_page_yoo/artwork2.jpg" class="img-fluid projects-image" alt="" style="margin-bottom: 30px;">
+                            <div style="text-align: right; padding-right: 20px;">
+                                <!-- 좋아요 부분 -->
+                                <button name="like_btn" onclick="location.href='like/5'" style="background-color:transparent; border: none;" method="post">
+                                    {% csrf_token %}
+                                    <svg id="like-count" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
+                                    </svg>
+                                </button>
+
+                                {% for post in posts %}
+                                    {% if post.pk == 5 %}
+                                        <p>{{ post.like }} 개</p>
+                                    {% endif %}
+                                {% endfor %}  
+                            </div>
+
+                            <h2 class="mt-3 mb-1">Fountain </h2> <br>
+
+                            <p>작가는 "이러한 순환운동이 생명의 윤회사상이나 존재론과 맞닿아 있다고 해석했다</p>
+                            <p>해체되거나 소멸하더라도 올곧게 서 있는 분수의 수많은 물줄기를 추상적이면서도 
+                                구상적인 형태로 화면에 옮김으로써 탄생과 소멸의 아름다움을 성찰한다"고 했다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: { "X-CSRFToken": '{{csrf_token}}' }
+    });
+
+    function pointSave() {
+        $.ajax({
+            type: 'POST',
+            url: 'like/1/',  // 좋아요 처리하는 뷰의 URL로 수정
+            success: function (response) {
+                // 페이지를 새로고침
+                location.reload();
+                alert('완료');
+            },
+            error: function (error) {
+                console.log('에러:', error);
+            }
+        });
+    }
+</script>
+
+    </body>
+</html>
+
