@@ -4,8 +4,10 @@
   <h3> 🏆🏆 2023 전북대학교 컴퓨터인공지능학부 작품경진대회 은상 🏆🏆 <br><br>
   🏆🏆 2023 전북대학교 & 전북비전대학교 공간경진 AI 대회 대상 🏆🏆</h3>
   <br>
-  #작품특징
+  <h4>작품특징</h4> <br>
   - 개발환경 : 안드로이드 스튜디오 <br>
   - 사용언어 : JAVA <br>
-  - 사용 API : Google Maps
+  - 사용 API : Google Maps <br>
+  - 외부 라이브러리 : VectorChildFinder 사용 <br>
+  
 </div>
