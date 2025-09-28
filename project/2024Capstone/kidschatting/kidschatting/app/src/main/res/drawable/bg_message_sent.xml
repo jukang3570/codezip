@@ -1,0 +1,5 @@
+<!-- res/drawable/bg_message_sent.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#D1C4E9" /> <!-- 배경색 (보라색) -->
+    <corners android:radius="8dp" /> <!-- 모서리를 둥글게 -->
+</shape>

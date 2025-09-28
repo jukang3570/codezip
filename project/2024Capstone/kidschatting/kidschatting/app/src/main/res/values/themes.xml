@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Kidschatting" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 기본 설정 -->
+        <!-- 필요한 경우 추가적으로 색상 등을 여기에 커스터마이징 -->
+    </style>
+
+    <style name="Theme.Kidschatting" parent="Base.Theme.Kidschatting" />
+</resources>

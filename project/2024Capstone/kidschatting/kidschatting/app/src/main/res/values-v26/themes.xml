@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyCustomButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@drawable/rounded_button_with_shadow</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">32dp</item>
+        <item name="android:paddingVertical">12dp</item>
+    </style>
+</resources>

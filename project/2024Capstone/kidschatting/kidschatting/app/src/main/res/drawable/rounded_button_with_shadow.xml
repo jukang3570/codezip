@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 그림자 -->
+    <item android:bottom="4dp" android:right="4dp">
+        <shape>
+            <solid android:color="#C5C5C5" /> <!-- 그림자 색상 -->
+            <corners android:radius="16dp" /> <!-- 둥근 모서리 -->
+        </shape>
+    </item>
+
+    <!-- 버튼 배경 -->
+    <item>
+        <shape>
+            <solid android:color="#FFFDD0" /> <!-- 크림색 -->
+            <corners android:radius="16dp" /> <!-- 둥근 모서리 -->
+        </shape>
+    </item>
+</layer-list>
