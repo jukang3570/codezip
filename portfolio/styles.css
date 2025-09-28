@@ -140,6 +140,90 @@ a:focus-visible {
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.6);
 }
 
+.hero-avatar {
+  width: 220px; /* larger on desktop */
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 18px; /* rounded-rect */
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(148,163,184,0.06);
+}
+
+.hero-avatar img {
+  display: block;
+  width: 100%;
+  height: auto; /* preserve original aspect ratio */
+  object-fit: contain; /* avoid cropping */
+}
+
+.hero-avatar__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 12px;
+  pointer-events: none;
+}
+
+.hero-avatar__overlay .btn {
+  pointer-events: auto;
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(148,163,184,0.08);
+  color: var(--text);
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.hero-avatar__controls {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-avatar__help {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* hero avatar image should be visible */
+
+.hero-file {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.hero-file input[type="file"] {
+  background: transparent;
+  color: var(--text);
+}
+
+.hero-file__meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.hero-file__name {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 960px) {
+  .hero-avatar {
+    width: 160px;
+  }
+}
+
 .hero-visual__card span {
   display: block;
   font-size: 0.85rem;
@@ -350,6 +434,66 @@ a:focus-visible {
   box-shadow: 0 15px 30px rgba(15, 23, 42, 0.4);
 }
 
+/* Profile / avatar area */
+.profile-card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.25);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.08);
+}
+
+.avatar-wrapper {
+  width: 160px;
+  height: 160px;
+  min-width: 160px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, rgba(226,232,240,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(148, 163, 184, 0.06);
+  position: relative;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.avatar-placeholder {
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.profile-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-controls .btn {
+  padding: 10px 16px;
+}
+
+.profile-controls #removeAvatar {
+  background: transparent;
+  border: 1px solid rgba(148,163,184,0.08);
+  color: var(--text-muted);
+}
+
+.help-text {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 .site-footer {
   padding: 36px 0 48px;
   text-align: center;
@@ -378,6 +522,11 @@ a:focus-visible {
 
   .section__grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
