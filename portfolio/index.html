@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오 | 프로젝트와 성장 기록</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <span class="brand__badge">포트폴리오</span>
+          <h1 class="brand__title">프로젝트 아카이브</h1>
+          <p class="brand__tagline">
+            클라우드 기반 웹 서비스부터 안드로이드 앱, 시스템 프로그래밍까지<br />
+            다양한 도메인의 프로젝트를 한눈에 확인해보세요.
+          </p>
+          <div class="brand__cta">
+            <a class="btn btn--primary" href="#projects">프로젝트 둘러보기</a>
+            <a class="btn" href="#contact">협업 문의하기</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual__glow"></div>
+          <div class="hero-visual__card">
+            <span>2023</span>
+            <strong>기술 여정</strong>
+            <p>웹 · 앱 · 시스템 개발 경험을 데이터로 증명합니다.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="container section__grid">
+          <div>
+            <h2 class="section__title">소개</h2>
+            <p class="section__subtitle">문제를 기술로 해결하는 개발자</p>
+          </div>
+          <div class="section__content">
+            <p>
+              도시 안전, 문화 예술, 금융 키오스크 등 다양한 문제 영역에서 사용자의
+              실제 요구를 분석하고 데이터 기반으로 솔루션을 설계했습니다. 학부
+              수업과 공모전, 팀 프로젝트를 통해 기획부터 배포까지 전 과정을
+              경험했습니다.
+            </p>
+            <ul class="chip-list" aria-label="핵심 역량">
+              <li class="chip">풀스택 웹 개발</li>
+              <li class="chip">모바일 앱 기획·구현</li>
+              <li class="chip">시스템 프로그래밍</li>
+              <li class="chip">클라우드 인프라 운영</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="projects">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">주요 프로젝트</h2>
+            <p class="section__subtitle">
+              최근 진행한 대표 프로젝트를 핵심 성과와 함께 정리했습니다.
+            </p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span class="project-card__tag">AWS · Django</span>
+                <span class="project-card__year">2023</span>
+              </div>
+              <h3 class="project-card__title">Art Park 온라인 미술관</h3>
+              <p class="project-card__description">
+                AWS Auto Scaling과 Load Balancing을 갖춘 Django 기반 온라인 전시
+                서비스입니다. 기획전, 작가 소개, 관람객 댓글과 좋아요를 통합하여
+                실제 전시 경험을 웹으로 구현했습니다.
+              </p>
+              <ul class="project-card__bullets">
+                <li>전시·댓글 데이터 모델링 및 실시간 관람 통계 제공</li>
+                <li>SMTP 메일 발송과 환경 변수 기반 설정 관리</li>
+                <li>AWS 상시 운영을 위한 로그 모니터링 &amp; 무중단 배포 구조</li>
+              </ul>
+              <a
+                class="project-card__link"
+                href="../project/2023_cloud_computing/readme.md"
+                >프로젝트 상세 보기 →</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Android · Open API</span>
+                <span class="project-card__year">2023</span>
+              </div>
+              <h3 class="project-card__title">공유우산 재난대응 앱</h3>
+              <p class="project-card__description">
+                도시열섬 피해 최소화를 목표로 공유 우산, 물차, 무더위 쉼터 정보를
+                통합한 안드로이드 애플리케이션입니다. 전북대 작품경진대회 은상과
+                공간경진 AI 대회 대상을 수상했습니다.
+              </p>
+              <ul class="project-card__bullets">
+                <li>Google Maps와 ViewModel을 활용한 실시간 거점 관리</li>
+                <li>서울시 Open API 연동으로 무더위 쉼터 데이터 자동 갱신</li>
+                <li>커뮤니티/투표 등 로컬 데이터베이스 기반 커뮤니케이션 제공</li>
+              </ul>
+              <a
+                class="project-card__link"
+                href="../project/2023_mobileproject/README.md"
+                >프로젝트 상세 보기 →</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Java · Swing</span>
+                <span class="project-card__year">2023</span>
+              </div>
+              <h3 class="project-card__title">멀티 미니게임 런처</h3>
+              <p class="project-card__description">
+                Galaga, 오목, 타자 연습 등 5개의 미니게임을 하나의 Java 런처로
+                통합했습니다. 스레드 기반 게임 루프와 공통 리소스 관리로 일관된
+                UI를 제공합니다.
+              </p>
+              <ul class="project-card__bullets">
+                <li>패키지 모듈화 및 공통 런처(MainButton) 구조 설계</li>
+                <li>멀티 스레드 입력 처리와 충돌 감지 로직 구현</li>
+                <li>사용자 정의 보드/난이도 등 확장성 높은 게임 설계</li>
+              </ul>
+              <a
+                class="project-card__link"
+                href="../project/2023_javaprogramming/readme.md"
+                >프로젝트 상세 보기 →</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span class="project-card__tag">C · 시스템 프로그래밍</span>
+                <span class="project-card__year">2023</span>
+              </div>
+              <h3 class="project-card__title">주식 키오스크 시스템</h3>
+              <p class="project-card__description">
+                공유 메모리와 유닉스 도메인 소켓을 이용한 다중 사용자 주식 거래
+                키오스크입니다. 관리자와 구매자 프로세스를 분리하여 안전한 동시
+                접속을 지원합니다.
+              </p>
+              <ul class="project-card__bullets">
+                <li>공유 메모리 기반 재고 동기화 &amp; 실시간 거래 처리</li>
+                <li>`fork`, `alarm` 등 시스템 호출을 이용한 세션 제어</li>
+                <li>CLI UI/UX 개선으로 사용자 흐름 최적화</li>
+              </ul>
+              <a
+                class="project-card__link"
+                href="../project/2023_linuxprogramming/README.txt"
+                >프로젝트 상세 보기 →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="timeline">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">성장 여정</h2>
+            <p class="section__subtitle">학부 수업과 공모전을 거치며 성장한 발자취를 기록했습니다.</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__year">2023.06</span>
+              <div class="timeline__content">
+                <h3>안드로이드 공유 우산 서비스 개발</h3>
+                <p>
+                  기획과 UI/UX 설계를 주도하고 지도·데이터 연동을 총괄했습니다. 팀 협업
+                  프로세스를 개선한 결과, 공모전 2관왕을 달성하며 프로젝트 가치를 인정받았
+                  습니다.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__year">2023.04</span>
+              <div class="timeline__content">
+                <h3>Django 기반 온라인 미술관 구축</h3>
+                <p>
+                  AWS EC2에 배포 가능한 구조를 설계하고 전시 데이터 모델, 이메일 알림
+                  시스템을 구현했습니다. 사용성 테스트를 통해 온라인 관람 동선을 지속적으로
+                  개선했습니다.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__year">2023.03</span>
+              <div class="timeline__content">
+                <h3>Java 멀티 미니게임 런처 완성</h3>
+                <p>
+                  5종 게임을 공통 런처로 통합하고 쓰레드 기반 입력·애니메이션 구조를
+                  정립했습니다. 학부 과제 최고 성적을 획득하며 안정성을 검증했습니다.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__year">2023.02</span>
+              <div class="timeline__content">
+                <h3>C 기반 주식 거래 키오스크 개발</h3>
+                <p>
+                  리눅스 시스템 프로그래밍 수업에서 팀을 리드하며 프로세스 간 통신과
+                  동시성 제어를 학습했습니다. 실시간 데이터 동기화 모듈을 직접 구현하며
+                  문제 해결 역량을 쌓았습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="skills">
+        <div class="container section__grid">
+          <div>
+            <h2 class="section__title">기술 스택</h2>
+            <p class="section__subtitle">현장에서 바로 활용 가능한 도구와 경험</p>
+          </div>
+          <div class="skills">
+            <div>
+              <h3>언어 · 프레임워크</h3>
+              <ul>
+                <li>Python · Django · Django ORM</li>
+                <li>Java · Android SDK · Swing</li>
+                <li>C · POSIX 시스템 프로그래밍</li>
+              </ul>
+            </div>
+            <div>
+              <h3>클라우드 · 인프라</h3>
+              <ul>
+                <li>AWS EC2, Auto Scaling, Load Balancer 구성</li>
+                <li>Linux 서버 운영 및 배포 자동화 경험</li>
+              </ul>
+            </div>
+            <div>
+              <h3>협업</h3>
+              <ul>
+                <li>Git/GitHub 기반 형상 관리 및 코드 리뷰</li>
+                <li>Notion, Figma, Google Workspace 협업 환경</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container section__grid">
+          <div>
+            <h2 class="section__title">연락처</h2>
+            <p class="section__subtitle">협업 및 인터뷰 문의를 환영합니다.</p>
+          </div>
+          <div class="section__content">
+            <p>
+              함께 성장할 수 있는 팀을 찾고 있습니다. 프로젝트에 대해 더 궁금한 사항이
+              있거나 협업을 제안하고 싶다면, 아래 채널로 연락해주세요.
+            </p>
+            <div class="contact-card">
+              <p><strong>Email.</strong> your.name@example.com</p>
+              <p>
+                <strong>GitHub.</strong>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/your-id</a>
+              </p>
+              <p>
+                <strong>Blog.</strong>
+                <a href="#" target="_blank" rel="noreferrer">기술 블로그 바로가기</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2024 포트폴리오. 취업을 위한 이야기를 담았습니다.</p>
+      </div>
+    </footer>
+  </body>
+</html>
